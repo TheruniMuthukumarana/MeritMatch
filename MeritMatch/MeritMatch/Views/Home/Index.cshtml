@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="gradient-bg min-vh-100 d-flex align-items-center">
+    <div class="container py-5">
+        <!-- Hero Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
+                <h1 class="display-2 fw-bold mb-3 text-white">
+                    <i class="bi bi-lightbulb-fill me-2"></i>MeritMatch
+                </h1>
+                <p class="lead mb-4 text-white-50 fs-4">
+                    The smart way for <span class="fw-semibold text-white">students</span> and <span class="fw-semibold text-white">supervisors</span> to connect, collaborate, and innovate on research projects.
+                </p>
+                <a class="btn btn-light btn-lg px-4 me-2 mb-2 shadow" asp-area="Identity" asp-page="/Account/Register">
+                    <i class="bi bi-person-plus-fill"></i> Get Started
+                </a>
+                <a class="btn btn-outline-light btn-lg px-4 mb-2 shadow" asp-area="Identity" asp-page="/Account/Login">
+                    <i class="bi bi-box-arrow-in-right"></i> Login
+                </a>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block text-center">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Collaboration" class="img-fluid rounded-4 shadow-lg" style="max-height: 320px;" />
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="h-100 p-4 rounded-4 shadow-sm border-0 bg-opacity-75 bg-white bg-gradient">
+                    <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+                    <h4 class="fw-bold mb-2">Student Discovery</h4>
+                    <p class="text-muted">Find research projects that match your interests and connect with the right supervisor for your academic growth.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-4 rounded-4 shadow-sm border-0 bg-opacity-75 bg-white bg-gradient">
+                    <i class="bi bi-person-badge-fill fs-1 text-success mb-3"></i>
+                    <h4 class="fw-bold mb-2">Supervisor Tools</h4>
+                    <p class="text-muted">Post opportunities, review student profiles, and build your ideal research team with ease.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="h-100 p-4 rounded-4 shadow-sm border-0 bg-opacity-75 bg-white bg-gradient">
+                    <i class="bi bi-chat-dots-fill fs-1 text-info mb-3"></i>
+                    <h4 class="fw-bold mb-2">Collaboration Hub</h4>
+                    <p class="text-muted">Communicate, share files, and manage your research projects all in one secure platform.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-5">
+            <h2 class="fw-bold mb-3 text-white">Ready to start your research journey?</h2>
+            <p class="lead mb-4 text-white-50">Join MeritMatch and unlock new opportunities for academic collaboration and innovation.</p>
+            <a class="btn btn-warning btn-lg px-5" asp-area="Identity" asp-page="/Account/Register">
+                <i class="bi bi-rocket-takeoff-fill"></i> Join Now
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+.gradient-bg {
+    background: linear-gradient(120deg, #6366f1 0%, #06b6d4 100%);
+}
+.bg-opacity-75 {
+    background-color: rgba(255,255,255,0.85)!important;
+}
+</style>
