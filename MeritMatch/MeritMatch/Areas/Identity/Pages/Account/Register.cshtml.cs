@@ -64,6 +64,10 @@ public class RegisterModel : PageModel
         [Required]
         [Display(Name = "Role")]
         public string Role { get; set; }
+
+        [Required]
+        [Display(Name = "Research Area")]
+        public string ResearchArea { get; set; }
     }
 
     public async Task OnGetAsync(string returnUrl = null)
@@ -80,6 +84,7 @@ public class RegisterModel : PageModel
         {
             var user = CreateUser();
             user.Name = Input.Name;
+            user.ResearchArea = Input.ResearchArea; // <-- This line saves the research area
 
             await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
             await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

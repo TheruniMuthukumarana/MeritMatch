@@ -1,4 +1,11 @@
-public enum ProjectStatus { Pending, UnderReview, Matched }
+public enum ProjectStatus
+{
+    Pending,
+    UnderReview,
+    Matched,
+    Approved,
+    Rejected
+}
 
 public class Project
 {
@@ -14,3 +21,4 @@ public class Project
     public string? SupervisorId { get; set; }
     public ApplicationUser Supervisor { get; set; }
 }
+
